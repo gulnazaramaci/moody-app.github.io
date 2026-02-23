@@ -1,0 +1,1960 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moody – Privacy Policy & Terms of Service</title>
+    <meta
+      name="description"
+      content="Moody App – Privacy Policy and Terms of Service"
+    />
+    <style>
+      :root {
+        --purple: #7c5cbf;
+        --purple-light: #a07de0;
+        --purple-dark: #5a3fa0;
+        --pink: #e070a0;
+        --bg: #f8f6ff;
+        --card: #ffffff;
+        --text: #1a1230;
+        --text-muted: #6b5e8a;
+        --border: #e8e0f5;
+        --radius: 16px;
+        --shadow: 0 4px 24px rgba(124, 92, 191, 0.1);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+        font-size: 16px;
+      }
+
+      /* ── Header ── */
+      header {
+        background: linear-gradient(
+          135deg,
+          var(--purple-dark) 0%,
+          var(--purple) 50%,
+          var(--purple-light) 100%
+        );
+        padding: 48px 24px 56px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      header::before {
+        content: "";
+        position: absolute;
+        top: -60px;
+        right: -60px;
+        width: 240px;
+        height: 240px;
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 50%;
+      }
+
+      header::after {
+        content: "";
+        position: absolute;
+        bottom: -80px;
+        left: -40px;
+        width: 200px;
+        height: 200px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 50%;
+      }
+
+      .header-logo {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        margin-bottom: 16px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      }
+
+      header h1 {
+        color: #fff;
+        font-size: 2.2rem;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        margin-bottom: 8px;
+      }
+
+      header p {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1rem;
+      }
+
+      /* ── Language Toggle ── */
+      .lang-bar {
+        background: var(--card);
+        border-bottom: 1px solid var(--border);
+        padding: 12px 24px;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 12px rgba(124, 92, 191, 0.08);
+      }
+
+      .lang-btn {
+        padding: 6px 20px;
+        border-radius: 999px;
+        border: 2px solid var(--purple);
+        background: transparent;
+        color: var(--purple);
+        font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+
+      .lang-btn.active,
+      .lang-btn:hover {
+        background: var(--purple);
+        color: #fff;
+      }
+
+      /* ── Navigation Tabs ── */
+      .nav-tabs {
+        display: flex;
+        justify-content: center;
+        gap: 0;
+        background: var(--card);
+        border-bottom: 1px solid var(--border);
+        overflow-x: auto;
+      }
+
+      .nav-tab {
+        padding: 14px 32px;
+        border: none;
+        background: transparent;
+        color: var(--text-muted);
+        font-size: 0.95rem;
+        font-weight: 600;
+        cursor: pointer;
+        border-bottom: 3px solid transparent;
+        transition: all 0.2s;
+        white-space: nowrap;
+      }
+
+      .nav-tab.active,
+      .nav-tab:hover {
+        color: var(--purple);
+        border-bottom-color: var(--purple);
+      }
+
+      /* ── Container ── */
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 24px 80px;
+      }
+
+      /* ── Section Panel ── */
+      .section-panel {
+        display: none;
+      }
+
+      .section-panel.active {
+        display: block;
+      }
+
+      /* ── Content Cards ── */
+      .card {
+        background: var(--card);
+        border-radius: var(--radius);
+        padding: 32px;
+        margin-bottom: 20px;
+        box-shadow: var(--shadow);
+        border: 1px solid var(--border);
+      }
+
+      .card-title {
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: var(--purple-dark);
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .card-title .icon {
+        width: 32px;
+        height: 32px;
+        background: linear-gradient(135deg, var(--purple), var(--purple-light));
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        flex-shrink: 0;
+      }
+
+      .card p {
+        color: #3d3050;
+        margin-bottom: 12px;
+      }
+
+      .card p:last-child {
+        margin-bottom: 0;
+      }
+
+      .card ul,
+      .card ol {
+        padding-left: 20px;
+        color: #3d3050;
+      }
+
+      .card ul li,
+      .card ol li {
+        margin-bottom: 8px;
+      }
+
+      /* ── Page Header ── */
+      .page-header {
+        text-align: center;
+        margin-bottom: 32px;
+      }
+
+      .page-header h2 {
+        font-size: 1.9rem;
+        font-weight: 700;
+        color: var(--text);
+        margin-bottom: 8px;
+      }
+
+      .page-header .updated {
+        color: var(--text-muted);
+        font-size: 0.9rem;
+      }
+
+      .page-header .badge {
+        display: inline-block;
+        background: linear-gradient(135deg, var(--purple), var(--pink));
+        color: #fff;
+        font-size: 0.75rem;
+        font-weight: 700;
+        padding: 4px 14px;
+        border-radius: 999px;
+        margin-bottom: 12px;
+        letter-spacing: 0.5px;
+      }
+
+      /* ── Data Table ── */
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 12px;
+        font-size: 0.9rem;
+      }
+
+      .data-table th {
+        background: var(--bg);
+        color: var(--purple-dark);
+        font-weight: 700;
+        padding: 10px 14px;
+        text-align: left;
+        border-bottom: 2px solid var(--border);
+      }
+
+      .data-table td {
+        padding: 10px 14px;
+        border-bottom: 1px solid var(--border);
+        color: #3d3050;
+        vertical-align: top;
+      }
+
+      .data-table tr:last-child td {
+        border-bottom: none;
+      }
+
+      /* ── Tag Chips ── */
+      .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      .tag {
+        background: var(--bg);
+        border: 1px solid var(--border);
+        color: var(--purple-dark);
+        font-size: 0.82rem;
+        font-weight: 600;
+        padding: 4px 12px;
+        border-radius: 999px;
+      }
+
+      /* ── Highlight Box ── */
+      .highlight {
+        background: linear-gradient(135deg, #f0ebff, #fce8f4);
+        border-left: 4px solid var(--purple);
+        border-radius: 0 12px 12px 0;
+        padding: 16px 20px;
+        margin: 16px 0;
+        color: var(--purple-dark);
+        font-weight: 500;
+      }
+
+      /* ── Contact ── */
+      .contact-box {
+        background: linear-gradient(135deg, var(--purple-dark), var(--purple));
+        border-radius: var(--radius);
+        padding: 32px;
+        text-align: center;
+        color: #fff;
+        margin-top: 32px;
+      }
+
+      .contact-box h3 {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+      }
+
+      .contact-box p {
+        opacity: 0.85;
+        margin-bottom: 16px;
+      }
+
+      .contact-box a {
+        display: inline-block;
+        background: #fff;
+        color: var(--purple-dark);
+        font-weight: 700;
+        padding: 10px 28px;
+        border-radius: 999px;
+        text-decoration: none;
+        transition: transform 0.2s;
+      }
+
+      .contact-box a:hover {
+        transform: translateY(-2px);
+      }
+
+      /* ── Footer ── */
+      footer {
+        background: var(--text);
+        color: rgba(255, 255, 255, 0.6);
+        text-align: center;
+        padding: 24px;
+        font-size: 0.85rem;
+      }
+
+      footer strong {
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      /* ── Responsive ── */
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 1.7rem;
+        }
+        .card {
+          padding: 20px;
+        }
+        .nav-tab {
+          padding: 12px 18px;
+          font-size: 0.85rem;
+        }
+        .data-table {
+          font-size: 0.82rem;
+        }
+      }
+
+      /* ── Language visibility ── */
+      [data-lang="tr"] {
+        display: none;
+      }
+      body.lang-tr [data-lang="tr"] {
+        display: block;
+      }
+      body.lang-tr [data-lang="en"] {
+        display: none;
+      }
+      body.lang-en [data-lang="tr"] {
+        display: none;
+      }
+      body.lang-en [data-lang="en"] {
+        display: block;
+      }
+
+      /* inline lang spans */
+      span[data-lang="tr"] {
+        display: none;
+      }
+      body.lang-tr span[data-lang="tr"] {
+        display: inline;
+      }
+      body.lang-tr span[data-lang="en"] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="lang-en">
+    <!-- ── Header ── -->
+    <header>
+      <img
+        src="https://moody-app.github.io/assets/images/app_logo.png"
+        onerror="this.style.display = 'none'"
+        alt="Moody Logo"
+        class="header-logo"
+      />
+      <h1>Moody</h1>
+      <p>
+        <span data-lang="en">Your personal mood &amp; wellness companion</span>
+        <span data-lang="tr">Kişisel ruh hali ve refah arkadaşın</span>
+      </p>
+    </header>
+
+    <!-- ── Language Toggle ── -->
+    <div class="lang-bar">
+      <button class="lang-btn active" id="btn-en" onclick="setLang('en')">
+        🇬🇧 English
+      </button>
+      <button class="lang-btn" id="btn-tr" onclick="setLang('tr')">
+        🇹🇷 Türkçe
+      </button>
+    </div>
+
+    <!-- ── Navigation Tabs ── -->
+    <div class="nav-tabs">
+      <button class="nav-tab active" onclick="showTab('privacy')">
+        <span data-lang="en">Privacy Policy</span>
+        <span data-lang="tr">Gizlilik Politikası</span>
+      </button>
+      <button class="nav-tab" onclick="showTab('terms')">
+        <span data-lang="en">Terms of Service</span>
+        <span data-lang="tr">Kullanım Koşulları</span>
+      </button>
+    </div>
+
+    <div class="container">
+      <!-- ════════════════════════════════════════════
+           PRIVACY POLICY
+      ════════════════════════════════════════════ -->
+      <div id="tab-privacy" class="section-panel active">
+        <!-- EN -->
+        <div data-lang="en">
+          <div class="page-header">
+            <h2>Privacy Policy</h2>
+            <p class="updated">Last updated: February 23, 2026</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">👋</span> Introduction
+            </div>
+            <p>
+              Welcome to <strong>Moody</strong> ("we", "our", or "us"). We are
+              committed to protecting your personal information and your right
+              to privacy. This Privacy Policy explains how we collect, use,
+              disclose, and safeguard your information when you use our mobile
+              application <strong>Moody</strong> (the "App").
+            </p>
+            <p>
+              Please read this policy carefully. If you disagree with its terms,
+              please discontinue use of the App.
+            </p>
+            <div class="highlight">
+              Moody is developed and operated in Turkey. By using the App, you
+              acknowledge that your data may be processed in Turkey and other
+              countries where our service providers operate.
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">📋</span> Information We Collect
+            </div>
+            <p>
+              We collect several types of information to provide and improve our
+              services:
+            </p>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Data Collected</th>
+                  <th>Purpose</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Account Information</strong></td>
+                  <td>
+                    Full name, email address, username, profile photo, bio,
+                    birth date, gender
+                  </td>
+                  <td>Account creation and authentication</td>
+                </tr>
+                <tr>
+                  <td><strong>Mood & Diary Data</strong></td>
+                  <td>
+                    Mood entries, diary text, photos, emotion tags, timestamps
+                  </td>
+                  <td>Core app functionality – mood tracking</td>
+                </tr>
+                <tr>
+                  <td><strong>Location Data</strong></td>
+                  <td>
+                    Approximate GPS coordinates (only when you choose to share
+                    on map)
+                  </td>
+                  <td>Map feature – sharing mood location with friends</td>
+                </tr>
+                <tr>
+                  <td><strong>Usage Data</strong></td>
+                  <td>App interactions, feature usage, crash reports</td>
+                  <td>App improvement and debugging</td>
+                </tr>
+                <tr>
+                  <td><strong>Device Information</strong></td>
+                  <td>Push notification token, device type, OS version</td>
+                  <td>Push notifications and compatibility</td>
+                </tr>
+                <tr>
+                  <td><strong>Communications</strong></td>
+                  <td>Messages sent between users within the App</td>
+                  <td>In-app messaging feature</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🔍</span> How We Use Your Information
+            </div>
+            <ul>
+              <li>Provide, operate, and maintain the App and its features</li>
+              <li>Create and manage your account</li>
+              <li>
+                Enable mood diary tracking and emotional wellness journaling
+              </li>
+              <li>
+                Display your shared moments on the in-app map (only when you opt
+                in)
+              </li>
+              <li>Facilitate social features: following, friends, messaging</li>
+              <li>
+                Send push notifications (reminders, friend activity) – you may
+                opt out at any time
+              </li>
+              <li>Improve the App through analytics and crash reporting</li>
+              <li>Display relevant advertisements via Google AdMob</li>
+              <li>Respond to your support requests and feedback</li>
+              <li>Comply with legal obligations</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🤝</span> How We Share Your Information
+            </div>
+            <p>
+              We do <strong>not</strong> sell your personal data. We may share
+              your information only in these limited circumstances:
+            </p>
+            <ul>
+              <li>
+                <strong>With other users:</strong> Your profile (name, username,
+                photo) and publicly shared mood moments are visible to your
+                friends or, if you set your profile to public, to all users.
+              </li>
+              <li>
+                <strong>Service providers:</strong> We use trusted third-party
+                services to operate the App:
+                <div class="tag-list">
+                  <span class="tag"
+                    >Google Firebase (Database, Auth, Storage)</span
+                  >
+                  <span class="tag">Google AdMob (Ads)</span>
+                  <span class="tag">Google Maps Platform (Maps)</span>
+                  <span class="tag">Google Sign-In (Authentication)</span>
+                </div>
+              </li>
+              <li>
+                <strong>Legal requirements:</strong> If required by law, court
+                order, or governmental authority.
+              </li>
+              <li>
+                <strong>Safety:</strong> To protect the rights, property, or
+                safety of Moody, our users, or the public.
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">📍</span> Location Information
+            </div>
+            <p>
+              Location access is <strong>optional</strong> and only used when
+              you explicitly choose to share a diary entry on the map.
+            </p>
+            <ul>
+              <li>
+                We request location permission only for the map-sharing feature.
+              </li>
+              <li>
+                Location data is associated with your mood entry and shared only
+                with your friends (or publicly if your profile is set to
+                public).
+              </li>
+              <li>
+                You can disable location access at any time in your device
+                Settings.
+              </li>
+              <li>We do not track your location in the background.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🔔</span> Push Notifications
+            </div>
+            <p>We may send push notifications for:</p>
+            <ul>
+              <li>Mood tracking reminders (if enabled by you)</li>
+              <li>Friend activity (new followers, likes, messages)</li>
+              <li>App updates and announcements</li>
+            </ul>
+            <p>
+              You can manage notification preferences within the App (Settings →
+              Notifications) or in your device's system settings at any time.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">📸</span> Photos &amp; Camera
+            </div>
+            <p>
+              We request camera and photo library access only when you choose
+              to:
+            </p>
+            <ul>
+              <li>Add a photo to a diary entry</li>
+              <li>Update your profile picture</li>
+            </ul>
+            <p>
+              Photos are uploaded to our secure Firebase Storage and are subject
+              to your privacy settings. We do not scan or analyze the content of
+              your photos beyond what is necessary to display them.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🍪</span> Data Retention
+            </div>
+            <p>
+              We retain your personal data for as long as your account is active
+              or as needed to provide services.
+            </p>
+            <ul>
+              <li>
+                <strong>Account data:</strong> Retained until you delete your
+                account.
+              </li>
+              <li>
+                <strong>Diary entries:</strong> Retained until deleted by you or
+                upon account deletion.
+              </li>
+              <li>
+                <strong>Messages:</strong> Retained until deleted by you or upon
+                account deletion.
+              </li>
+              <li>
+                <strong>Analytics data:</strong> Aggregated and anonymized;
+                retained for up to 24 months.
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🛡️</span> Data Security
+            </div>
+            <p>
+              We implement industry-standard security measures to protect your
+              data:
+            </p>
+            <ul>
+              <li>All data is transmitted over encrypted HTTPS connections.</li>
+              <li>
+                Data is stored in Google Firebase with access controls and
+                encryption at rest.
+              </li>
+              <li>
+                Authentication is handled via Firebase Authentication with
+                secure token management.
+              </li>
+              <li>Passwords are never stored in plain text.</li>
+            </ul>
+            <p>
+              However, no method of transmission over the Internet is 100%
+              secure. We cannot guarantee absolute security.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">👤</span> Your Rights &amp; Choices
+            </div>
+            <p>You have the following rights regarding your personal data:</p>
+            <ul>
+              <li>
+                <strong>Access:</strong> View your profile and diary data within
+                the App.
+              </li>
+              <li>
+                <strong>Edit:</strong> Update your profile information at any
+                time via Settings → Edit Profile.
+              </li>
+              <li>
+                <strong>Delete entries:</strong> Delete individual diary entries
+                at any time.
+              </li>
+              <li>
+                <strong>Delete account:</strong> Permanently delete your account
+                and all associated data via Settings → Privacy &amp; Security →
+                Delete Account.
+              </li>
+              <li>
+                <strong>Privacy controls:</strong> Set your profile to public or
+                private; control who sees your map activity.
+              </li>
+              <li>
+                <strong>Opt-out:</strong> Disable notifications, location
+                sharing, and ad personalization via device settings.
+              </li>
+              <li>
+                <strong>Data portability:</strong> Contact us to request a copy
+                of your data.
+              </li>
+            </ul>
+            <div class="highlight">
+              Account deletion is permanent and irreversible. All your data,
+              including diary entries, photos, messages, and connections, will
+              be permanently deleted.
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">👶</span> Children's Privacy
+            </div>
+            <p>
+              Moody is not intended for children under the age of
+              <strong>13</strong> (or the applicable age of digital consent in
+              your jurisdiction). We do not knowingly collect personal
+              information from children under 13.
+            </p>
+            <p>
+              If you are a parent or guardian and believe your child has
+              provided us with personal information, please contact us and we
+              will promptly delete such information.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">📢</span> Advertising
+            </div>
+            <p>
+              We use <strong>Google AdMob</strong> to display advertisements
+              within the App. AdMob may collect certain device identifiers and
+              usage data to serve personalized or contextual ads.
+            </p>
+            <ul>
+              <li>
+                You can opt out of personalized advertising in your device
+                settings (iOS: Settings → Privacy → Tracking).
+              </li>
+              <li>
+                AdMob's privacy practices are governed by
+                <a
+                  href="https://policies.google.com/privacy"
+                  target="_blank"
+                  rel="noopener"
+                  >Google's Privacy Policy</a
+                >.
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🔄</span> Changes to This Policy
+            </div>
+            <p>
+              We may update this Privacy Policy from time to time. We will
+              notify you of significant changes by posting the new policy in the
+              App and updating the "Last updated" date at the top of this page.
+            </p>
+            <p>
+              Your continued use of the App after changes become effective
+              constitutes your acceptance of the updated policy.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🌍</span> International Data Transfers
+            </div>
+            <p>
+              Your information may be transferred to and processed in countries
+              other than your own, including Turkey and the United States (where
+              Google's servers are located). By using Moody, you consent to this
+              transfer.
+            </p>
+          </div>
+
+          <div class="contact-box">
+            <h3>Contact Us</h3>
+            <p>
+              If you have questions, requests, or concerns about this Privacy
+              Policy, please reach out to us.
+            </p>
+            <a href="mailto:support@moody-app.com">support@moody-app.com</a>
+          </div>
+        </div>
+
+        <!-- TR -->
+        <div data-lang="tr">
+          <div class="page-header">
+            <h2>Gizlilik Politikası</h2>
+            <p class="updated">Son güncelleme: 23 Şubat 2026</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title"><span class="icon">👋</span> Giriş</div>
+            <p>
+              <strong>Moody</strong> ("biz", "bizim" veya "bize") olarak kişisel
+              bilgilerinizi ve gizlilik hakkınızı korumaya kararlıyız. Bu
+              Gizlilik Politikası, mobil uygulamamız <strong>Moody</strong>'yi
+              ("Uygulama") kullandığınızda bilgilerinizi nasıl topladığımızı,
+              kullandığımızı, açıkladığımızı ve koruduğumuzu açıklamaktadır.
+            </p>
+            <p>
+              Lütfen bu politikayı dikkatlice okuyun. Şartlarına katılmıyorsanız
+              Uygulamayı kullanmayı bırakınız.
+            </p>
+            <div class="highlight">
+              Moody, Türkiye'de geliştirilip işletilmektedir. Uygulamayı
+              kullanarak, verilerinizin Türkiye'de ve hizmet sağlayıcılarımızın
+              faaliyet gösterdiği diğer ülkelerde işlenebileceğini kabul etmiş
+              olursunuz.
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">📋</span> Topladığımız Bilgiler
+            </div>
+            <p>
+              Hizmetlerimizi sağlamak ve geliştirmek için çeşitli bilgiler
+              toplamaktayız:
+            </p>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Kategori</th>
+                  <th>Toplanan Veriler</th>
+                  <th>Amaç</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Hesap Bilgileri</strong></td>
+                  <td>
+                    Ad soyad, e-posta adresi, kullanıcı adı, profil fotoğrafı,
+                    biyografi, doğum tarihi, cinsiyet
+                  </td>
+                  <td>Hesap oluşturma ve kimlik doğrulama</td>
+                </tr>
+                <tr>
+                  <td><strong>Ruh Hali &amp; Günlük Verileri</strong></td>
+                  <td>
+                    Ruh hali girişleri, günlük metni, fotoğraflar, duygu
+                    etiketleri, zaman damgaları
+                  </td>
+                  <td>Uygulamanın temel işlevi – ruh hali takibi</td>
+                </tr>
+                <tr>
+                  <td><strong>Konum Verisi</strong></td>
+                  <td>
+                    Yaklaşık GPS koordinatları (yalnızca haritada paylaşmayı
+                    seçtiğinizde)
+                  </td>
+                  <td>
+                    Harita özelliği – arkadaşlarla ruh hali konumunu paylaşma
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Kullanım Verileri</strong></td>
+                  <td>
+                    Uygulama etkileşimleri, özellik kullanımı, çökme raporları
+                  </td>
+                  <td>Uygulama geliştirme ve hata düzeltme</td>
+                </tr>
+                <tr>
+                  <td><strong>Cihaz Bilgileri</strong></td>
+                  <td>Bildirim jetonu, cihaz türü, işletim sistemi sürümü</td>
+                  <td>Anlık bildirimler ve uyumluluk</td>
+                </tr>
+                <tr>
+                  <td><strong>İletişim Verileri</strong></td>
+                  <td>
+                    Uygulama içinde kullanıcılar arasında gönderilen mesajlar
+                  </td>
+                  <td>Uygulama içi mesajlaşma özelliği</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🔍</span> Bilgilerinizi Nasıl Kullanıyoruz
+            </div>
+            <ul>
+              <li>
+                Uygulamayı ve özelliklerini sağlamak, işletmek ve sürdürmek
+              </li>
+              <li>Hesabınızı oluşturmak ve yönetmek</li>
+              <li>
+                Ruh hali günlüğü takibi ve duygusal refah günlüğü tutmayı
+                sağlamak
+              </li>
+              <li>
+                Paylaşılan anlarınızı uygulama içi haritada göstermek (yalnızca
+                siz kabul ettiğinizde)
+              </li>
+              <li>Sosyal özellikler: takip etme, arkadaşlar, mesajlaşma</li>
+              <li>
+                Anlık bildirimler göndermek (hatırlatıcılar, arkadaş
+                aktiviteleri) – istediğiniz zaman devre dışı bırakabilirsiniz
+              </li>
+              <li>
+                Analitik ve çökme raporları aracılığıyla Uygulamayı geliştirmek
+              </li>
+              <li>Google AdMob aracılığıyla ilgili reklamları göstermek</li>
+              <li>
+                Destek taleplerinize ve geri bildirimlerinize yanıt vermek
+              </li>
+              <li>Yasal yükümlülüklere uymak</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🤝</span> Bilgilerinizi Nasıl Paylaşıyoruz
+            </div>
+            <p>
+              Kişisel verilerinizi <strong>satmıyoruz</strong>. Bilgilerinizi
+              yalnızca şu sınırlı durumlarda paylaşabiliriz:
+            </p>
+            <ul>
+              <li>
+                <strong>Diğer kullanıcılarla:</strong> Profiliniz (ad, kullanıcı
+                adı, fotoğraf) ve kamuya açık paylaşılan ruh hali anlarınız
+                arkadaşlarınıza veya profilinizi herkese açık olarak
+                ayarladıysanız tüm kullanıcılara görünür.
+              </li>
+              <li>
+                <strong>Hizmet sağlayıcılar:</strong> Uygulamayı işletmek için
+                güvenilir üçüncü taraf hizmetleri kullanıyoruz:
+                <div class="tag-list">
+                  <span class="tag"
+                    >Google Firebase (Veritabanı, Auth, Depolama)</span
+                  >
+                  <span class="tag">Google AdMob (Reklamlar)</span>
+                  <span class="tag">Google Maps Platform (Haritalar)</span>
+                  <span class="tag">Google Sign-In (Kimlik Doğrulama)</span>
+                </div>
+              </li>
+              <li>
+                <strong>Yasal gereklilikler:</strong> Yasa, mahkeme kararı veya
+                hükümet otoritesi tarafından gerekli görüldüğünde.
+              </li>
+              <li>
+                <strong>Güvenlik:</strong> Moody'nin, kullanıcılarımızın veya
+                kamunun haklarını, mülkiyetini veya güvenliğini korumak için.
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">📍</span> Konum Bilgileri
+            </div>
+            <p>
+              Konum erişimi <strong>isteğe bağlıdır</strong> ve yalnızca açıkça
+              haritada bir günlük girişi paylaşmayı seçtiğinizde kullanılır.
+            </p>
+            <ul>
+              <li>
+                Konum iznini yalnızca harita paylaşım özelliği için talep
+                ederiz.
+              </li>
+              <li>
+                Konum verileri ruh hali girişinizle ilişkilendirilir ve yalnızca
+                arkadaşlarınızla paylaşılır (profiliniz herkese açıksa
+                herkesle).
+              </li>
+              <li>
+                Cihaz Ayarları'ndan istediğiniz zaman konum erişimini devre dışı
+                bırakabilirsiniz.
+              </li>
+              <li>Konumunuzu arka planda takip etmiyoruz.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🔔</span> Anlık Bildirimler
+            </div>
+            <p>Şunlar için anlık bildirimler gönderebiliriz:</p>
+            <ul>
+              <li>Ruh hali takip hatırlatıcıları (siz etkinleştirdiyseniz)</li>
+              <li>
+                Arkadaş aktiviteleri (yeni takipçiler, beğeniler, mesajlar)
+              </li>
+              <li>Uygulama güncellemeleri ve duyurular</li>
+            </ul>
+            <p>
+              Bildirim tercihlerini Uygulama içinden (Ayarlar → Bildirimler)
+              veya cihazınızın sistem ayarlarından istediğiniz zaman
+              yönetebilirsiniz.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">📸</span> Fotoğraflar &amp; Kamera
+            </div>
+            <p>
+              Kamera ve fotoğraf kitaplığına erişimi yalnızca şunları yapmayı
+              seçtiğinizde talep ederiz:
+            </p>
+            <ul>
+              <li>Günlük girişine fotoğraf eklemek</li>
+              <li>Profil resminizi güncellemek</li>
+            </ul>
+            <p>
+              Fotoğraflar güvenli Firebase Depolama'ya yüklenir ve gizlilik
+              ayarlarınıza tabidir. Fotoğraflarınızın içeriğini, görüntülemek
+              için gerekli olanın ötesinde taramıyor veya analiz etmiyoruz.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🍪</span> Veri Saklama
+            </div>
+            <p>
+              Kişisel verilerinizi hesabınız aktif olduğu veya hizmetleri
+              sağlamak için gerekli olduğu sürece saklarız.
+            </p>
+            <ul>
+              <li>
+                <strong>Hesap verileri:</strong> Hesabınızı silene kadar
+                saklanır.
+              </li>
+              <li>
+                <strong>Günlük girişleri:</strong> Siz silene kadar veya hesap
+                silinene kadar saklanır.
+              </li>
+              <li>
+                <strong>Mesajlar:</strong> Siz silene kadar veya hesap silinene
+                kadar saklanır.
+              </li>
+              <li>
+                <strong>Analitik veriler:</strong> Toplu ve anonimleştirilmiş;
+                en fazla 24 ay saklanır.
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🛡️</span> Veri Güvenliği
+            </div>
+            <p>
+              Verilerinizi korumak için sektör standardı güvenlik önlemleri
+              uyguluyoruz:
+            </p>
+            <ul>
+              <li>
+                Tüm veriler şifrelenmiş HTTPS bağlantıları üzerinden iletilir.
+              </li>
+              <li>
+                Veriler, erişim kontrolleri ve bekleyen şifreleme ile Google
+                Firebase'de saklanır.
+              </li>
+              <li>
+                Kimlik doğrulama, güvenli token yönetimiyle Firebase
+                Authentication aracılığıyla gerçekleştirilir.
+              </li>
+              <li>Şifreler hiçbir zaman düz metin olarak saklanmaz.</li>
+            </ul>
+            <p>
+              Ancak İnternet üzerinden hiçbir iletim yöntemi %100 güvenli
+              değildir. Mutlak güvenliği garanti edemeyiz.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">👤</span> Haklarınız &amp; Seçimleriniz
+            </div>
+            <p>Kişisel verilerinizle ilgili aşağıdaki haklara sahipsiniz:</p>
+            <ul>
+              <li>
+                <strong>Erişim:</strong> Uygulama içinde profil ve günlük
+                verilerinizi görüntüleyin.
+              </li>
+              <li>
+                <strong>Düzenleme:</strong> Profil bilgilerinizi Ayarlar →
+                Profili Düzenle üzerinden istediğiniz zaman güncelleyin.
+              </li>
+              <li>
+                <strong>Girişleri silme:</strong> Tek tek günlük girişlerini
+                istediğiniz zaman silin.
+              </li>
+              <li>
+                <strong>Hesabı silme:</strong> Hesabınızı ve tüm ilgili
+                verilerinizi Ayarlar → Gizlilik &amp; Güvenlik → Hesabı Sil
+                üzerinden kalıcı olarak silin.
+              </li>
+              <li>
+                <strong>Gizlilik kontrolleri:</strong> Profilinizi herkese açık
+                veya gizli olarak ayarlayın; harita aktivitelerinizi kimin
+                göreceğini kontrol edin.
+              </li>
+              <li>
+                <strong>Devre dışı bırakma:</strong> Cihaz ayarları üzerinden
+                bildirimleri, konum paylaşımını ve reklam kişiselleştirmeyi
+                devre dışı bırakın.
+              </li>
+              <li>
+                <strong>Veri taşınabilirliği:</strong> Verilerinizin bir
+                kopyasını talep etmek için bizimle iletişime geçin.
+              </li>
+            </ul>
+            <div class="highlight">
+              Hesap silme işlemi kalıcı ve geri alınamaz. Günlük girişleriniz,
+              fotoğraflarınız, mesajlarınız ve bağlantılarınız dahil tüm
+              verileriniz kalıcı olarak silinecektir.
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">👶</span> Çocukların Gizliliği
+            </div>
+            <p>
+              Moody, <strong>13 yaşın altındaki</strong> çocuklar için (veya
+              bulunduğunuz yargı bölgesindeki geçerli dijital rıza yaşı)
+              tasarlanmamıştır. 13 yaşın altındaki çocuklardan bilerek kişisel
+              bilgi toplamıyoruz.
+            </p>
+            <p>
+              Bir ebeveyn veya vasi iseniz ve çocuğunuzun bize kişisel bilgi
+              verdiğini düşünüyorsanız, lütfen bizimle iletişime geçin; bu
+              bilgileri derhal sileceğiz.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">📢</span> Reklamcılık
+            </div>
+            <p>
+              Uygulama içinde reklam göstermek için
+              <strong>Google AdMob</strong> kullanıyoruz. AdMob,
+              kişiselleştirilmiş veya bağlamsal reklamlar sunmak için belirli
+              cihaz tanımlayıcıları ve kullanım verilerini toplayabilir.
+            </p>
+            <ul>
+              <li>
+                Kişiselleştirilmiş reklamcılığı cihaz ayarlarınızdan devre dışı
+                bırakabilirsiniz (iOS: Ayarlar → Gizlilik → Takip).
+              </li>
+              <li>
+                AdMob'un gizlilik uygulamaları
+                <a
+                  href="https://policies.google.com/privacy"
+                  target="_blank"
+                  rel="noopener"
+                  >Google'ın Gizlilik Politikası</a
+                >
+                kapsamındadır.
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🔄</span> Bu Politikadaki Değişiklikler
+            </div>
+            <p>
+              Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Önemli
+              değişiklikleri, yeni politikayı Uygulama'da yayınlayarak ve bu
+              sayfanın üst kısmındaki "Son güncelleme" tarihini güncelleyerek
+              size bildireceğiz.
+            </p>
+            <p>
+              Değişiklikler yürürlüğe girdikten sonra Uygulamayı kullanmaya
+              devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına
+              gelir.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🌍</span> Uluslararası Veri Transferleri
+            </div>
+            <p>
+              Bilgileriniz, Türkiye ve Google'ın sunucularının bulunduğu Amerika
+              Birleşik Devletleri dahil kendi ülkenizden farklı ülkelere
+              aktarılabilir ve orada işlenebilir. Moody'yi kullanarak bu
+              transfere onay vermiş olursunuz.
+            </p>
+          </div>
+
+          <div class="contact-box">
+            <h3>Bizimle İletişime Geçin</h3>
+            <p>
+              Bu Gizlilik Politikası hakkında sorularınız, talepleriniz veya
+              endişeleriniz varsa lütfen bize ulaşın.
+            </p>
+            <a href="mailto:support@moody-app.com">support@moody-app.com</a>
+          </div>
+        </div>
+      </div>
+      <!-- /tab-privacy -->
+
+      <!-- ════════════════════════════════════════════
+           TERMS OF SERVICE
+      ════════════════════════════════════════════ -->
+      <div id="tab-terms" class="section-panel">
+        <!-- EN -->
+        <div data-lang="en">
+          <div class="page-header">
+            <div class="badge">Terms &amp; Conditions</div>
+            <h2>Terms of Service</h2>
+            <p class="updated">Last updated: February 23, 2026</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">📜</span> Acceptance of Terms
+            </div>
+            <p>
+              By downloading, installing, or using the
+              <strong>Moody</strong> mobile application, you agree to be bound
+              by these Terms of Service ("Terms"). If you do not agree to these
+              Terms, please do not use the App.
+            </p>
+            <p>
+              We reserve the right to modify these Terms at any time. Continued
+              use of the App after changes constitutes acceptance of the new
+              Terms.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">📱</span> About the App
+            </div>
+            <p>
+              Moody is a mood tracking and social wellness application that
+              allows you to:
+            </p>
+            <ul>
+              <li>Record and track your daily moods and emotions</li>
+              <li>
+                Keep a personal emotional diary with text, photos, and tags
+              </li>
+              <li>Share mood moments on a map with friends</li>
+              <li>Connect with friends, follow people, and send messages</li>
+              <li>View mood analytics and personal reports</li>
+              <li>Set routines and wellness reminders</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🔐</span> Account Registration
+            </div>
+            <ul>
+              <li>
+                You must be at least <strong>13 years old</strong> to create an
+                account.
+              </li>
+              <li>
+                You must provide accurate, complete, and current information
+                during registration.
+              </li>
+              <li>
+                You are responsible for maintaining the confidentiality of your
+                account credentials.
+              </li>
+              <li>
+                You are responsible for all activities that occur under your
+                account.
+              </li>
+              <li>
+                You must notify us immediately of any unauthorized use of your
+                account.
+              </li>
+              <li>Each person may only maintain one account.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">✍️</span> User Content
+            </div>
+            <p>
+              You retain ownership of content you create (diary entries, photos,
+              messages). By posting content, you grant us a limited,
+              non-exclusive license to store, display, and transmit your content
+              solely to operate the App.
+            </p>
+            <p>
+              You are solely responsible for content you post and represent
+              that:
+            </p>
+            <ul>
+              <li>You own or have the right to use the content</li>
+              <li>The content does not violate any applicable laws</li>
+              <li>The content does not infringe on the rights of others</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🚫</span> Prohibited Conduct
+            </div>
+            <p>You agree NOT to:</p>
+            <ul>
+              <li>
+                Post content that is unlawful, harmful, threatening, abusive,
+                harassing, defamatory, or obscene
+              </li>
+              <li>
+                Impersonate any person or entity or misrepresent your
+                affiliation with a person or entity
+              </li>
+              <li>Harass, bully, intimidate, or stalk other users</li>
+              <li>
+                Post content that constitutes hate speech based on race,
+                ethnicity, national origin, religion, gender, age, disability,
+                or sexual orientation
+              </li>
+              <li>Post nudity, pornographic, or sexually explicit content</li>
+              <li>Share spam, chain letters, or pyramid schemes</li>
+              <li>
+                Attempt to gain unauthorized access to other accounts or systems
+              </li>
+              <li>Transmit malware, viruses, or any destructive code</li>
+              <li>
+                Use the App for commercial purposes without our written consent
+              </li>
+              <li>Scrape, crawl, or systematically access the App's data</li>
+              <li>Circumvent any security features of the App</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🗺️</span> Map &amp; Location Features
+            </div>
+            <ul>
+              <li>Location sharing on the map is entirely voluntary.</li>
+              <li>
+                You control the visibility of your shared moments (friends only
+                or public).
+              </li>
+              <li>
+                You are responsible for the location-related content you post.
+              </li>
+              <li>
+                Do not share real-time location data in a way that could
+                compromise your physical safety.
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">💬</span> Social Features &amp; Messaging
+            </div>
+            <ul>
+              <li>Be respectful and kind to other users.</li>
+              <li>
+                Do not use messaging features to send unsolicited commercial
+                messages (spam).
+              </li>
+              <li>
+                We reserve the right to remove content that violates these Terms
+                or our Community Guidelines.
+              </li>
+              <li>
+                We may suspend or terminate accounts that repeatedly violate
+                these Terms.
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">⚕️</span> Health &amp; Wellness Disclaimer
+            </div>
+            <div class="highlight">
+              Moody is a personal wellness tool, NOT a medical application. The
+              App is not intended to diagnose, treat, cure, or prevent any
+              medical condition or mental health disorder.
+            </div>
+            <p>
+              If you are experiencing a mental health crisis, please contact a
+              qualified healthcare professional or emergency services. Moody is
+              not a substitute for professional medical or psychological advice,
+              diagnosis, or treatment.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">💼</span> Intellectual Property
+            </div>
+            <p>
+              The App, including its design, logos, code, and content (excluding
+              user-generated content), is owned by Moody and protected by
+              intellectual property laws.
+            </p>
+            <ul>
+              <li>
+                You may not copy, modify, distribute, or create derivative works
+                of the App without our prior written consent.
+              </li>
+              <li>
+                "Moody" and the Moody logo are trademarks. You may not use them
+                without permission.
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">📵</span> Termination
+            </div>
+            <p>
+              We may suspend or terminate your account at our sole discretion if
+              you:
+            </p>
+            <ul>
+              <li>Violate these Terms of Service</li>
+              <li>Engage in fraudulent or illegal activities</li>
+              <li>Endanger the safety of other users</li>
+              <li>
+                Abuse the platform's reporting or content moderation systems
+              </li>
+            </ul>
+            <p>
+              You may terminate your account at any time via Settings → Privacy
+              &amp; Security → Delete Account.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">⚠️</span> Disclaimer of Warranties
+            </div>
+            <p>
+              The App is provided "as is" and "as available" without warranties
+              of any kind, express or implied. We do not warrant that:
+            </p>
+            <ul>
+              <li>The App will be uninterrupted or error-free</li>
+              <li>The App will meet your specific requirements</li>
+              <li>Any errors in the App will be corrected</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">📊</span> Limitation of Liability
+            </div>
+            <p>
+              To the fullest extent permitted by applicable law, Moody shall not
+              be liable for any indirect, incidental, special, consequential, or
+              punitive damages arising from your use of or inability to use the
+              App.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">⚖️</span> Governing Law
+            </div>
+            <p>
+              These Terms shall be governed by and construed in accordance with
+              the laws of the <strong>Republic of Turkey</strong>, without
+              regard to conflict of law principles.
+            </p>
+            <p>
+              Any disputes arising from these Terms shall be subject to the
+              exclusive jurisdiction of Turkish courts.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🍎</span> Apple App Store Additional Terms
+            </div>
+            <p>
+              If you downloaded the App from the Apple App Store, the following
+              additional terms apply:
+            </p>
+            <ul>
+              <li>
+                These Terms are between you and Moody, not with Apple Inc. Apple
+                is not responsible for the App and its content.
+              </li>
+              <li>
+                Apple has no obligation to provide any maintenance or support
+                services for the App.
+              </li>
+              <li>
+                In the event of any failure of the App to conform to any
+                applicable warranty, you may notify Apple, and Apple will refund
+                the purchase price (if any). To the maximum extent permitted by
+                law, Apple has no other warranty obligation.
+              </li>
+              <li>
+                Apple is not responsible for addressing any claims relating to
+                the App or your use of it.
+              </li>
+              <li>
+                You must comply with applicable third-party terms when using the
+                App.
+              </li>
+              <li>
+                Apple and Apple's subsidiaries are third-party beneficiaries of
+                these Terms.
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-box">
+            <h3>Questions about our Terms?</h3>
+            <p>
+              If you have any questions about these Terms of Service, please
+              contact us.
+            </p>
+            <a href="mailto:support@moody-app.com">support@moody-app.com</a>
+          </div>
+        </div>
+
+        <!-- TR -->
+        <div data-lang="tr">
+          <div class="page-header">
+            <div class="badge">Kullanım Şartları</div>
+            <h2>Kullanım Koşulları</h2>
+            <p class="updated">Son güncelleme: 23 Şubat 2026</p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">📜</span> Koşulların Kabulü
+            </div>
+            <p>
+              <strong>Moody</strong> mobil uygulamasını indirerek, kurarak veya
+              kullanarak bu Kullanım Koşullarını ("Koşullar") kabul etmiş
+              olursunuz. Bu Koşulları kabul etmiyorsanız lütfen Uygulamayı
+              kullanmayın.
+            </p>
+            <p>
+              Bu Koşulları herhangi bir zamanda değiştirme hakkını saklı
+              tutarız. Değişikliklerden sonra Uygulamayı kullanmaya devam etmek,
+              yeni Koşulları kabul ettiğiniz anlamına gelir.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">📱</span> Uygulama Hakkında
+            </div>
+            <p>
+              Moody, şunları yapmanıza olanak tanıyan bir ruh hali takip ve
+              sosyal refah uygulamasıdır:
+            </p>
+            <ul>
+              <li>
+                Günlük ruh halinizi ve duygularınızı kaydetmek ve takip etmek
+              </li>
+              <li>
+                Metin, fotoğraf ve etiketlerle kişisel duygusal günlük tutmak
+              </li>
+              <li>Arkadaşlarla haritada ruh hali anlarını paylaşmak</li>
+              <li>
+                Arkadaşlarla bağlantı kurmak, insanları takip etmek ve mesaj
+                göndermek
+              </li>
+              <li>Ruh hali analizlerini ve kişisel raporları görüntülemek</li>
+              <li>Rutinler ve refah hatırlatıcıları ayarlamak</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🔐</span> Hesap Kaydı
+            </div>
+            <ul>
+              <li>
+                Hesap oluşturmak için en az
+                <strong>13 yaşında</strong> olmalısınız.
+              </li>
+              <li>
+                Kayıt sırasında doğru, eksiksiz ve güncel bilgi vermelisiniz.
+              </li>
+              <li>
+                Hesap kimlik bilgilerinizin gizliliğini korumaktan siz
+                sorumlusunuz.
+              </li>
+              <li>
+                Hesabınız altında gerçekleşen tüm etkinliklerden siz
+                sorumlusunuz.
+              </li>
+              <li>
+                Hesabınızın yetkisiz kullanımını bize derhal bildirmelisiniz.
+              </li>
+              <li>Her kişi yalnızca bir hesap tutabilir.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">✍️</span> Kullanıcı İçeriği
+            </div>
+            <p>
+              Oluşturduğunuz içeriğin (günlük girişleri, fotoğraflar, mesajlar)
+              sahipliğini korursunuz. İçerik yayınlayarak, bize içeriğinizi
+              yalnızca Uygulamayı çalıştırmak amacıyla depolama, görüntüleme ve
+              iletme için sınırlı, münhasır olmayan bir lisans vermiş olursunuz.
+            </p>
+            <p>
+              Yayınladığınız içerikten yalnızca siz sorumlusunuz ve şunları
+              beyan edersiniz:
+            </p>
+            <ul>
+              <li>İçeriğe sahipsiniz veya onu kullanma hakkına sahipsiniz</li>
+              <li>İçerik geçerli hiçbir yasayı ihlal etmiyor</li>
+              <li>İçerik başkalarının haklarını ihlal etmiyor</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🚫</span> Yasak Davranışlar
+            </div>
+            <p>Şunları YAPMAMAYI kabul ediyorsunuz:</p>
+            <ul>
+              <li>
+                Yasadışı, zararlı, tehdit edici, taciz edici, karalayıcı veya
+                müstehcen içerik paylaşmak
+              </li>
+              <li>
+                Herhangi bir kişiyi veya kuruluşu taklit etmek veya bir kişiyle
+                ilişkinizi yanlış beyan etmek
+              </li>
+              <li>
+                Diğer kullanıcıları taciz etmek, zorbalık yapmak, yıldırmak veya
+                takip etmek
+              </li>
+              <li>
+                Irk, etnik köken, ulusal köken, din, cinsiyet, yaş, engellilik
+                veya cinsel yönelim temelinde nefret söylemi oluşturan içerik
+                paylaşmak
+              </li>
+              <li>
+                Çıplaklık, pornografik veya cinsel açıdan açık içerik paylaşmak
+              </li>
+              <li>Spam, zincir mektuplar veya piramit şemaları paylaşmak</li>
+              <li>
+                Diğer hesaplara veya sistemlere yetkisiz erişim sağlamaya
+                çalışmak
+              </li>
+              <li>
+                Kötü amaçlı yazılım, virüs veya herhangi bir yıkıcı kod iletmek
+              </li>
+              <li>
+                Yazılı iznimiz olmadan Uygulamayı ticari amaçlarla kullanmak
+              </li>
+              <li>
+                Uygulamanın verilerini kazımak, taramak veya sistematik olarak
+                erişmek
+              </li>
+              <li>Uygulamanın herhangi bir güvenlik özelliğini atlatmak</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🗺️</span> Harita &amp; Konum Özellikleri
+            </div>
+            <ul>
+              <li>Haritada konum paylaşımı tamamen isteğe bağlıdır.</li>
+              <li>
+                Paylaşılan anlarınızın görünürlüğünü kontrol edersiniz (yalnızca
+                arkadaşlar veya herkese açık).
+              </li>
+              <li>
+                Yayınladığınız konum ile ilgili içerikten siz sorumlusunuz.
+              </li>
+              <li>
+                Fiziksel güvenliğinizi tehlikeye atabilecek şekilde gerçek
+                zamanlı konum verisi paylaşmayın.
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">💬</span> Sosyal Özellikler &amp; Mesajlaşma
+            </div>
+            <ul>
+              <li>Diğer kullanıcılara saygılı ve nazik olun.</li>
+              <li>
+                Mesajlaşma özelliklerini istenmeyen ticari mesaj (spam)
+                göndermek için kullanmayın.
+              </li>
+              <li>
+                Bu Koşulları veya Topluluk Yönergelerimizi ihlal eden içerikleri
+                kaldırma hakkını saklı tutarız.
+              </li>
+              <li>
+                Bu Koşulları tekrarlayan şekilde ihlal eden hesapları askıya
+                alabilir veya sonlandırabiliriz.
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">⚕️</span> Sağlık &amp; Refah Reddi Beyanı
+            </div>
+            <div class="highlight">
+              Moody kişisel bir refah aracıdır, TIBBİ bir uygulama DEĞİLDİR.
+              Uygulama, herhangi bir tıbbi durumu veya ruh sağlığı bozukluğunu
+              teşhis etmek, tedavi etmek, iyileştirmek veya önlemek amacıyla
+              tasarlanmamıştır.
+            </div>
+            <p>
+              Bir ruh sağlığı krizi yaşıyorsanız lütfen nitelikli bir sağlık
+              uzmanına veya acil servislere başvurun. Moody, profesyonel tıbbi
+              veya psikolojik tavsiye, teşhis veya tedavinin yerini tutmaz.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">💼</span> Fikri Mülkiyet
+            </div>
+            <p>
+              Uygulama; tasarımı, logoları, kodu ve içeriği (kullanıcı
+              tarafından oluşturulan içerik hariç) dahil olmak üzere Moody'ye
+              aittir ve fikri mülkiyet yasalarıyla korunmaktadır.
+            </p>
+            <ul>
+              <li>
+                Uygulamayı önceden yazılı iznimiz olmadan kopyalayamaz,
+                değiştiremez, dağıtamaz veya türev çalışmalar oluşturamazsınız.
+              </li>
+              <li>
+                "Moody" ve Moody logosu ticari markalardır. İzin almadan
+                kullanamazsınız.
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">📵</span> Hesap Feshi
+            </div>
+            <p>
+              Aşağıdaki durumlarda hesabınızı kendi takdirimize bağlı olarak
+              askıya alabilir veya sonlandırabiliriz:
+            </p>
+            <ul>
+              <li>Bu Kullanım Koşullarını ihlal etmeniz</li>
+              <li>Sahtecilik veya yasadışı faaliyetlerde bulunmanız</li>
+              <li>Diğer kullanıcıların güvenliğini tehlikeye atmanız</li>
+              <li>
+                Platformun raporlama veya içerik moderasyonu sistemlerini kötüye
+                kullanmanız
+              </li>
+            </ul>
+            <p>
+              Hesabınızı istediğiniz zaman Ayarlar → Gizlilik &amp; Güvenlik →
+              Hesabı Sil üzerinden sonlandırabilirsiniz.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">⚠️</span> Garanti Reddi
+            </div>
+            <p>
+              Uygulama, açık veya zımni herhangi bir garanti olmaksızın "olduğu
+              gibi" ve "mevcut olduğu şekliyle" sunulmaktadır. Şunları garanti
+              etmiyoruz:
+            </p>
+            <ul>
+              <li>Uygulamanın kesintisiz veya hatasız olacağı</li>
+              <li>Uygulamanın özel gereksinimlerinizi karşılayacağı</li>
+              <li>Uygulamadaki hataların düzeltileceği</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">📊</span> Sorumluluk Sınırlaması
+            </div>
+            <p>
+              Yürürlükteki yasaların izin verdiği azami ölçüde, Moody;
+              Uygulamayı kullanımınızdan veya kullanamamanızdan kaynaklanan
+              dolaylı, arızi, özel, sonuçsal veya cezai zararlardan sorumlu
+              olmayacaktır.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">⚖️</span> Geçerli Hukuk
+            </div>
+            <p>
+              Bu Koşullar, kanunlar ihtilafı ilkeleri gözetilmeksizin
+              <strong>Türkiye Cumhuriyeti</strong> yasalarına göre yönetilecek
+              ve yorumlanacaktır.
+            </p>
+            <p>
+              Bu Koşullardan doğan uyuşmazlıklar Türk mahkemelerinin münhasır
+              yargı yetkisine tabi olacaktır.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span class="icon">🍎</span> Apple App Store Ek Koşulları
+            </div>
+            <p>
+              Uygulamayı Apple App Store'dan indirdiyseniz aşağıdaki ek koşullar
+              geçerlidir:
+            </p>
+            <ul>
+              <li>
+                Bu Koşullar sizinle Moody arasındadır, Apple Inc. ile değildir.
+                Apple, Uygulama ve içeriğinden sorumlu değildir.
+              </li>
+              <li>
+                Apple'ın Uygulama için herhangi bir bakım veya destek hizmeti
+                sağlama yükümlülüğü yoktur.
+              </li>
+              <li>
+                Uygulamanın herhangi bir garantiye uymadığı durumlarda Apple'a
+                bildirebilir ve Apple satın alma bedelini (varsa) iade edebilir.
+                Yasaların izin verdiği azami ölçüde, Apple'ın başka garanti
+                yükümlülüğü yoktur.
+              </li>
+              <li>
+                Apple, Uygulama veya kullanımınıza ilişkin talepleri ele
+                almaktan sorumlu değildir.
+              </li>
+              <li>
+                Uygulamayı kullanırken geçerli üçüncü taraf koşullarına
+                uymalısınız.
+              </li>
+              <li>
+                Apple ve Apple'ın yan kuruluşları, bu Koşulların üçüncü taraf
+                yararlanıcılarıdır.
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-box">
+            <h3>Koşullar hakkında sorularınız mı var?</h3>
+            <p>
+              Bu Kullanım Koşulları hakkında herhangi bir sorunuz varsa lütfen
+              bizimle iletişime geçin.
+            </p>
+            <a href="mailto:support@moody-app.com">support@moody-app.com</a>
+          </div>
+        </div>
+      </div>
+      <!-- /tab-terms -->
+    </div>
+    <!-- /container -->
+
+    <!-- ── Footer ── -->
+    <footer>
+      <p>
+        <strong>Moody</strong> &copy; 2026 &nbsp;·&nbsp; Made with ♥ in Turkey
+        &nbsp;·&nbsp; All rights reserved
+      </p>
+    </footer>
+
+    <script>
+      function setLang(lang) {
+        document.body.classList.remove("lang-en", "lang-tr");
+        document.body.classList.add("lang-" + lang);
+        document
+          .getElementById("btn-en")
+          .classList.toggle("active", lang === "en");
+        document
+          .getElementById("btn-tr")
+          .classList.toggle("active", lang === "tr");
+      }
+
+      function showTab(tab) {
+        document
+          .querySelectorAll(".section-panel")
+          .forEach((el) => el.classList.remove("active"));
+        document.getElementById("tab-" + tab).classList.add("active");
+        document
+          .querySelectorAll(".nav-tab")
+          .forEach((el) => el.classList.remove("active"));
+        event.currentTarget.classList.add("active");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      // default lang = EN
+      document.body.classList.add("lang-en");
+    </script>
+  </body>
+</html>
